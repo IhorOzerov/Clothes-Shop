@@ -13,7 +13,7 @@ let burger = document.getElementById('burgerBtn')
 let nav2 = document.getElementById('nav2')
 let headerNav = document.getElementById('burgerMenu')
 
-burger.addEventListener('ontouchstart', () => {
+burger.addEventListener('touchstart', () => {
 
     nav2.classList.toggle('hidden')
     headerNav.classList.toggle('header-nav')
