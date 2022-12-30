@@ -1,4 +1,4 @@
-let data = [
+/*let data = [
     {
         photo,
         title,
@@ -7,7 +7,7 @@ let data = [
         sizes,
         details
     }
-]
+]*/
 
 let burger = document.getElementById('burgerBtn')
 let nav2 = document.getElementById('nav2')
