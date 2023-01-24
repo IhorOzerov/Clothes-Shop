@@ -7,16 +7,16 @@
     <title>HW12</title>
     <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="./style/style.css">
-    <link rel="shortcut icon" href="#" />
+    <link rel="shortcut icon" href="#">
 </head>
 
 <body>
-    <header >
+    <header>
         <div id="h" class="header container">
-            <a href="/"><img src="./image/logo.png" alt="logo" class="header-img"></a>
+            <a href="index.html"><img src="./image/logo.png" alt="logo" class="header-img"></a>
             <nav id="nav1">
                 <ul class="header-nav uppercase">
-                    <li class="header-nav-item"><a href="#">SHORTS</a></li>
+                    <li class="header-nav-item"><a id="shorts" href="./pages/shorts.html">SHORTS</a></li>
                     <li class="header-nav-item"><a href="#">PANTS</a></li>
                     <li class="header-nav-item"><a href="#">SHIRTS</a></li>
                     <li class="header-nav-item"><a href="#">ACCESSORIES</a></li>
@@ -24,7 +24,7 @@
                 </ul>
             </nav>
             <div class="header-search uppercase">
-                <input placeholder="SEARCH ENTIRE STORE HERE" type="search">
+                <input class="main-search" placeholder="SEARCH ENTIRE STORE HERE" type="search">
                 
             </div>
             
@@ -33,258 +33,227 @@
 
                 <nav id="nav2" class="hidden">
                         <ul id="burgerMenu" class="header-nav uppercase">
-                            <li class="header-nav-item"><a href="#">SHORTS</a></li>
+                            <li class="header-nav-item"><a href="./pages/shorts.html">SHORTS</a></li>
                             <li class="header-nav-item"><a href="#">PANTS</a></li>
                             <li class="header-nav-item"><a href="#">SHIRTS</a></li>
                             <li class="header-nav-item"><a href="#">ACCESSORIES</a></li>
                             <li class="header-nav-item"><a href="#">SALE</a></li>
                         </ul>
-                    </nav>
+                </nav>
             </div>
         </div>
     </header>
     <main>
         <div class="banner container">
-            <div class="banner__content">
-                <div class="banner__content-title uppercase">BEST SELLING STRETCH SHORTS</div>
-                <div class="banner__content-subtitle">Get the perfect fit with 6 different inseam lengths.</div>
-                <div class="banner__content-btn uppercase">
-                    <button>SHOP ALL SHORTS</button>
-                </div>
-            </div>
+            <section class="banner__content">
+                <h2 class="banner__content-title uppercase">BEST SELLING STRETCH SHORTS</h2>
+                <h6 class="banner__content-subtitle">Get the perfect fit with 6 different inseam lengths.</h6>
+                <div class="banner__content-btn uppercase"><a href="./pages/shorts.html">SHOP ALL SHORTS</a></div>
+            </section>
             <div class="banner__img">
                 <img src="./image/banner_1.png" alt="banner">
             </div>
         </div>
-        <div class="pantsContainer">
-            <h2>TGIF, INLET, AND MARCHAL'S COLLECTIONS</h2>
-            <h1>NOW 40% OFF!</h1>
+        <section class="pantsContainer">
+            <h3>TGIF, INLET, AND MARCHAL'S COLLECTIONS</h3>
+            <h2>NOW 40% OFF!</h2>
             <div class="pants">
-                <div class="pantsBox">
-                    <img src="./image/1.svg" alt="pants">
-                    <h5>Marchal's Original Cargo Short</h5>
-                    <img src="./image/5stars.svg" alt="stars">
-                    <p class="underStars">As low as <span>$40.99</span></p>
-                    <button class="chart">
-                        <img  src="./image/chartBag.svg" alt="#">
-                        <p>ADD TO CART</p>
-                    </button>
-                </div>
-                <div class="pantsBox">
-                    <img src="./image/2.svg" alt="pants">
-                    <h5>Inlet Original Short</h5>
-                    <img src="./image/5stars.svg" alt="stars">
-                    <p class="underStars">As low as <span>$38.99</span></p>
-                    <button class="chart" >
-                        <img src="./image/chartBag.svg" alt="#">
-                        <p>ADD TO CART</p>
-                    </button>
-                </div>
-                <div class="pantsBox">
-                    <img src="./image/3.svg" alt="pants">
-                    <h5>TGIF Pant</h5>
-                    <img src="./image/4stars.svg" alt="stars">
-                    <p class="underStars">As low as <span>$40.99</span></p>
-                    <button class="chart">
-                        <img src="./image/chartBag.svg" alt="#">
-                        <p>ADD TO CART</p>
-                    </button>
-                </div>
-                <div class="pantsBox">
-                    <img src="./image/4.svg" alt="pants">
-                    <h5>Inlet Original Pant</h5>
-                    <img src="./image/4stars.svg" alt="stars">
-                    <p class="underStars">As low as <span>$52.99</span></p>
-                    <button class="chart">
-                        <img src="./image/chartBag.svg" alt="#">
-                        <p>ADD TO CART</p>
-                    </button>
-                </div>
+                
+                    <article id="51" class="pantsBox">
+                        <a href="./pages/goodPage.html" target="_blank">
+                            <img src="./image/1.svg" alt="pants">
+                            <h5>Marchal's Original Cargo Short</h5>
+                            <img src="./image/5stars.svg" alt="stars">
+                            <p class="underStars">As low as <span>$40.99</span></p>
+                        </a>
+                        <button class="chart">
+                            ADD TO CART
+                        </button>
+                    </article>
+                
+                    <article id="52" class="pantsBox">
+                        <a href="./pages/goodPage.html" target="_blank">
+                            <img src="./image/2.svg" alt="pants">
+                            <h5>Inlet Original Short</h5>
+                            <img src="./image/5stars.svg" alt="stars">
+                            <p class="underStars">As low as <span>$38.99</span></p>
+                        </a>
+                        <button class="chart">
+                            ADD TO CART
+                        </button>
+                    </article>
+                
+                    <article id="53" class="pantsBox">
+                        <a href="./pages/goodPage.html" target="_blank">
+                            <img src="./image/3.svg" alt="pants">
+                            <h5>TGIF Pant</h5>
+                            <img src="./image/4stars.svg" alt="stars">
+                            <p class="underStars">As low as <span>$40.99</span></p>
+                        </a>
+                        <button class="chart">
+                            ADD TO CART
+                        </button>
+                    </article>
+
+                    <article id="54" class="pantsBox">
+                        <a href="./pages/goodPage.html" target="_blank">
+                            <img src="./image/4.svg" alt="pants">
+                            <h5>Inlet Original Pant</h5>
+                            <img src="./image/4stars.svg" alt="stars">
+                            <p class="underStars">As low as <span>$52.99</span></p>
+                        </a>
+                        <button class="chart">
+                            ADD TO CART
+                        </button>
+                    </article>
             </div>
         
-        </div>
+        </section>
         <div class="banner reverse container">
-            <div class="banner__content">
-                <div class="banner__content-title uppercase">OUR BESTSELLING PANTS</div>
-                <div class="banner__content-subtitle">Our classic cargo pants are built to last and designed to exceed your
-                    expectations! From Frequent Traveler to Hatteras to Trinidad, we have the perfect fit for you!</div>
-                <div class="banner__content-btn uppercase">
-                    <button >SHOP ALL PANTS</button>
-                </div>
-            </div>
+            <section class="banner__content">
+                <h2 class="banner__content-title uppercase">OUR BESTSELLING PANTS</h2>
+                <h6 class="banner__content-subtitle">Our classic cargo pants are built to last and designed to exceed your
+                    expectations! From Frequent Traveler to Hatteras to Trinidad, we have the perfect fit for you!</h6>
+                
+                <button class="banner__content-btn uppercase">SHOP ALL PANTS</button>
+                
+            </section>
             <div class="banner__img">
                 <img class="pantsImg" src="./image/bestPants.svg" alt="banner">
             </div>
         </div>
         <div class="pantsContainer mansContainer">
             <div class="man-container">
-                <div class="image-block">
-                    <p class="image-text">ECOTHS: NOW 30% OFF!</p>
+                <article class="image-block">
+                    <h6 class="image-text">ECOTHS: NOW 30% OFF!</h6>
                     <img class="mans" src="./image/man1.png" alt="">
-                </div>
+                </article>
                 
                 <p class="banner__content-subtitle">Our entire Ecoths collection is on sale! Plus, for every Ecoths purchase we donate 3 meals to food banks across the
                 United States. We’re over 400,000 meals in now.</p>
-                <div class="banner__content-btn uppercase">
-                    <button>SHOP ECOTHS SALE</button>
-                </div>
+                
+                <button class="banner__content-btn uppercase">SHOP ECOTHS SALE</button>
+                
             </div>
             <div class="man-container">
-                <div class="image-block">
-                    <p class="image-text">NEW POWELL PRINT SHIRT</p>
+                <article  class="image-block">
+                    <h6 class="image-text">NEW POWELL PRINT SHIRT</h6>
                     <img class="mans" src="./image/man2.png" alt="">
-                </div>
+                </article>
                 
                 <p class="banner__content-subtitle">New from Old Ranch Brands, the Powell short sleeve print shirt! Look effortlessly sharp in this lightweight cotton shirt
                 with a classic shape and convenient features.</p>
-                <div class="banner__content-btn uppercase">
-                    <button>SHOP POWEL SHORT SLEEVE</button>
-                </div>
+                
+                <button class="banner__content-btn uppercase">SHOP POWEL SHORT SLEEVE</button>
+                
             </div>
         
         </div>
         <div class="forest container">
-            <div class="banner__content">
-                <div class="banner__content-title uppercase">SPORTIF ORIGINAL PANT</div>
-                <div class="banner__content-subtitle">Our classic nautical cargo pants are built to last and designed to exceed your expectations! Crafted from our stretch
-                twill blend that offers the comfort of cotton, the wrinkle resistance of polyester and the mobility of Lycra®.</div>
-                <div class="banner__content-btn uppercase">
-                    <button>SHOP SPORTIF ORIGINAL PANT</button>
-                </div>
-            </div>
+            <section class="banner__content">
+                <h2 class="banner__content-title uppercase">SPORTIF ORIGINAL PANT</h2>
+                <h6 class="banner__content-subtitle">Our classic nautical cargo pants are built to last and designed to exceed your expectations! Crafted from our stretch
+                twill blend that offers the comfort of cotton, the wrinkle resistance of polyester and the mobility of Lycra®.</h6>
+                
+                <button class="banner__content-btn uppercase">SHOP SPORTIF ORIGINAL PANT</button>
+                
+            </section>
         </div>
         <div class="three container">
-            <div class="red-box">
-                <h1 class="banner__content-title uppercase">STAY IN TREND WITH SPORTIF</h1>
-            </div>
+            <article class="red-box">
+                <h2 class="banner__content-title uppercase">STAY IN TREND WITH SPORTIF</h2>
+            </article>
             <div class="main-box">
                 <div class="oneOf">
                     <img src="./image/belts.png" alt="">
-                    <div class="glue">
+                    <article class="glue">
                         <h4>Don't Forget a Belt!</h4>
                         <button>SHOP ALL BELTS</button>
-                    </div>
-                    
+                    </article>
                 </div>
                 <div class="oneOf">
                     <img src="./image/swimmers.png" alt="">
-                    <div class="glue">
+                    <article class="glue">
                         <h4>Swim Trunk Styles on Sale!</h4>
                         <button>SHOP ALL SWIM TRUNKS</button>
-                    </div>
-                    
+                    </article>
                 </div>
                 <div class="oneOf">
                     <img src="./image/magazine.png" alt="">
-                    <div class="glue">
+                    <article class="glue">
                         <h4>Shop Newest Online Catalog</h4>
                         <button>SHOP NEWEST CATALOG</button>
-                    </div>
-                    
+                    </article>
                 </div>
             </div>
         </div>
         <div class="family-legacy">
             <div class="family-main">
-                <div class="banner__content-title uppercase">FAMILY OWNED LEGACY</div>
-                <div class="banner__content-subtitle">We are proud to celebrate over 50 years of excellence as a family owned and operated business.</div>
-                <div class="banner__content-btn uppercase">
-                    <button>ABOUT US</button>
-                </div>
+                <h2 class="banner__content-title uppercase">FAMILY OWNED LEGACY</h2>
+                <h6 class="banner__content-subtitle">We are proud to celebrate over 50 years of excellence as a family owned and operated business.</h6>
+                <button class="banner__content-btn uppercase">ABOUT US</button>
             </div>
             <img src="./image/50.png" alt="">
         </div>
-        <a href="#h"><img src="./image/Group 87.png" alt="icon"  class="arrow"></a>
+        <a class="bag" href="./pages/saleBox.html">
+            <span id="bagSpan">0</span>
+            <img src="./image/bag.png" alt="icon" class="arrw">
+        </a>
+        <a href="#h"><img src="./image/Group87.png" alt="icon"  class="arrow"></a>
     </main>
-<footer>
-    <div class="footer">
-        <div class="footer-list">
-            <h4>ORDERING ONLINE</h4>
-            <ul>
-                <li>Account Login</li>
-                <li>Our Guarantee</li>
-                <li>Sportif Stretch Guide</li>
-                <li>Size Chart & Sizing Information</li>
-                <li>Hemming Information</li>
-                <li>Ordering & Payment</li>
-                <li>Shipping Information</li>
-                <li>Returns</li>
-            </ul>
-        </div>
-        <div class="footer-list">
-            <h4>ABOUT SPORTIF</h4>
-            <ul>
-                <li>COVID-19 Response</li>
-                <li>History</li>
-                <li>Legacy</li>
-                <li>Good Sam Program</li>
-                <li>Privacy & Security</li>
-                <li>Terms & Conditions</li>
-                <li>Careers</li>
-            </ul>
-        </div>
-        <div class="footer-list">
-            <h4>QUICK LINKS</h4>
-            <ul>
-                <li>FAQs</li>
-                <li>Shop Online Catalog</li>
-                <li>Contact Us</li>
-            </ul>
-        </div>
-        <div class="footer-input-container">
-            <h4>GET TO KNOW US</h4>
-            <p>Sign up for our weekly newsletter and get a 10% off coupon by email for your first order! </p>
-            
-            <label for="email">Sign Up for Our Newsletter:
-                <div class="input-container">
-                    <input placeholder="EMAIL ADDRESS" type="email" id="email">
-                    <button class="uppercase">SUBSCRIBE</button>
+    <footer>
+        <div class="footer">
+            <section class="footer-list">
+                <h4>ORDERING ONLINE</h4>
+                <ul>
+                    <li>Account Login</li>
+                    <li>Our Guarantee</li>
+                    <li>Sportif Stretch Guide</li>
+                    <li>Size Chart & Sizing Information</li>
+                    <li>Hemming Information</li>
+                    <li>Ordering & Payment</li>
+                    <li>Shipping Information</li>
+                    <li>Returns</li>
+                </ul>
+            </section>
+            <section class="footer-list">
+                <h4>ABOUT SPORTIF</h4>
+                <ul>
+                    <li>COVID-19 Response</li>
+                    <li>History</li>
+                    <li>Legacy</li>
+                    <li>Good Sam Program</li>
+                    <li>Privacy & Security</li>
+                    <li>Terms & Conditions</li>
+                    <li>Careers</li>
+                </ul>
+            </section>
+            <section class="footer-list">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li>FAQs</li>
+                    <li>Shop Online Catalog</li>
+                    <li>Contact Us</li>
+                </ul>
+            </section>
+            <section class="footer-input-container">
+                <h4>GET TO KNOW US</h4>
+                <p>Sign up for our weekly newsletter and get a 10% off coupon by email for your first order! </p>
+                <div  class="input-container">
+                    <form action="/" id="form1">
+                        <label for="email">Sign Up for Our Newsletter:
+                            <input placeholder="EMAIL ADDRESS" type="email" id="email">
+                        </label>
+                    </form>
+                    <button class="uppercase" type="submit" form="form1">SUBSCRIBE</button>
                 </div>
                 
-            </label>
+            </section>
         </div>
-    </div>
-    <div class="white container">
-        <p>©2021 Sportif Mailorder. All Rights Reserved.</p>
-    </div>
-</footer>
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-<div class="header">
-        <div class="burger">
-            <div>shorts</div>
-            <div>pants</div>
-            <div>trousers</div>
-            <div>acessories</div>
-            <div>sale</div>
+        <div class="white container">
+            <p>©2021 Sportif Mailorder. All Rights Reserved.</p>
         </div>
-        <div class="text">
-            <div>shorts</div>
-            <div>pants</div>
-            <div>trousers</div>
-            <div>acessories</div>
-            <div>sale</div>
-        </div>
-    </div>
-    <div class="main">
-        <img class='img' src="./img/1.jpg" alt="">
-    </div>
-    <div class="main">
-        <div class="img"></div>
-    </div>
---> 
-    
-    <script src="./script.js"></script>
+    </footer>
+    <script type="module" src="./script/script.js"></script>
 </body>
 </html>
